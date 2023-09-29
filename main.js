@@ -23,5 +23,7 @@ function init() {
     /* マテリアル生成、材質決定*/
     const material = new THREE.MeshStandardMaterial({
         map: new THREE.TextureLoader().load("images/earthmap1k.jpg"),
-    })
+    });
+    /* メッシュ作成 */
+    const earth = new THREE.Mesh(geometry, material);
 }
