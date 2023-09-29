@@ -13,5 +13,7 @@ function init() {
     const camera = new THREE.PerspectiveCamera(45, width / height);
 
     /* レンダラー作成 */
-    const renderer = new THREE.WebGLRenderer();
+    const renderer = new THREE.WebGLRenderer({
+        canvas: document.querySelector("#myCanvas");
+    });
 }
