@@ -1,0 +1,1 @@
+window.addEventListener("head", init);
