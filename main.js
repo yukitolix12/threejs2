@@ -11,4 +11,7 @@ function init() {
 
     /* カメラ作成 */
     const camera = new THREE.PerspectiveCamera(45, width / height);
+
+    /* レンダラー作成 */
+    const renderer = new THREE.WebGLRenderer();
 }
