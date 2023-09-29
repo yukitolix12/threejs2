@@ -26,4 +26,5 @@ function init() {
     });
     /* メッシュ作成 */
     const earth = new THREE.Mesh(geometry, material);
+    scene.add(earth);
 }
