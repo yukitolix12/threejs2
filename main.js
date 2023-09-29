@@ -1,4 +1,4 @@
-window.addEventListener("head", init);
+window.addEventListener("load", init);
 
 function init() {
     /* サイズを指定*/ 
