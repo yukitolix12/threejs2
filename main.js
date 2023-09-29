@@ -10,5 +10,5 @@ function init() {
     const scene = new THREE.Scene();
 
     /* カメラ作成 */
-    const camera = new THREE.PerspectiveCamera();
+    const camera = new THREE.PerspectiveCamera(45, width / height);
 }
