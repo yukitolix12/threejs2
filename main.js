@@ -8,4 +8,7 @@ function init() {
 
     /* シーン作成 */
     const scene = new THREE.Scene();
+
+    /* カメラ作成 */
+    const camera = new THREE.PerspectiveCamera();
 }
