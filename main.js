@@ -18,6 +18,10 @@ function init() {
     });
     renderer.setSize(window.innerWidth, window.innerHeight);
 
-    /* 旧体生成 */
+    /* 球体生成 */
     const geometry = new THREE.SphereGeometry(300, 30, 30);
+    /* マテリアル生成、材質決定*/
+    const material = new THREE.MeshStandardMaterial({
+        map: new THREE.TextureLoader().load("images/earthmap1k.jpg"),
+    })
 }
