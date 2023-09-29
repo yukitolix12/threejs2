@@ -17,4 +17,7 @@ function init() {
         canvas: document.querySelector("#myCanvas"),
     });
     renderer.setSize(window.innerWidth, window.innerHeight);
+
+    /* 旧体生成 */
+    const geometry = new THREE.SphereGeometry(300, 30, 30);
 }
