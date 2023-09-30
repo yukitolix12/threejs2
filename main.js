@@ -41,5 +41,8 @@ function init() {
     const pointLightHelper = new THREE.pointLightHelper(pointLight, 30);
     scene.add(pointLightHelper);
 
-    
+    /* フレーム毎に呼び出される関数 */
+    function tick() {
+        rot += 0.5;
+    }
 }
