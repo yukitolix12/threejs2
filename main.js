@@ -52,7 +52,11 @@ function init() {
         camera.position.x = 1000 * Math.sin(radian);
 
         /* ライトを周回させる */
-
+        pointLight.position.set(
+        500 * Math.sin(Data.now() / 500), 
+        500 * Math.sin(Data.now() / 1000),
+        500 * Math.cos(Data.now() / 500)
+        );
 
         /* レンダリング */ 
         renderer.render(scene, camera);
