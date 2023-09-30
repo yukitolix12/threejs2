@@ -17,8 +17,7 @@ function init() {
 
     /* カメラ作成 */
     const camera = new THREE.PerspectiveCamera(45, width / height);
-    camera.position.z = 1000;
-
+    
     /* 球体生成 */
     const geometry = new THREE.SphereGeometry(300, 30, 30);
     /* マテリアル生成、材質決定*/
@@ -49,6 +48,7 @@ function init() {
 
         /* 角度に応じてカメラの位置を変更する */
         camera.position.x = 1000 * Math.sin(radian);
+        camera.position.z = 2000 * Math.cos(radian);
 
         /* ライトを周回させる */
         pointLight.position.set(
