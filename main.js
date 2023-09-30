@@ -29,5 +29,5 @@ function init() {
     scene.add(earth);
 
     /* 平行光源 */
-    const directionalLight =new THREE.DirectionalLight( 0xffffff, 2, 1000 );
+    const directionalLight =new THREE.DirectionalLight( 0xffffff, 1.9 );
 }
