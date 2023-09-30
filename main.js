@@ -45,6 +45,10 @@ function init() {
     function tick() {
         rot += 0.5;
 
+        /* ラジアン変換 */
         const radian = (rot * Math.PI) / 180;
+
+        /* 角度に応じてカメラの位置を変更する */
+        camera.position.x = 1000 * Math.sin(radian);
     }
 }
