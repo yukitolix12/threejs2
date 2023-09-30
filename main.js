@@ -38,7 +38,7 @@ function init() {
     /* ポイント光源 */
     const pointLight = new THREE.PointLight( 0xffffff, 2, 1000);
     scene.add(pointLight);
-    const pointLightHelper = new THREE.pointLightHelper(pointLight, 30);
+    const pointLightHelper = new THREE.PointLightHelper(pointLight, 30);
     scene.add(pointLightHelper);
 
     /* フレーム毎に呼び出される関数 */
@@ -53,9 +53,9 @@ function init() {
 
         /* ライトを周回させる */
         pointLight.position.set(
-        500 * Math.sin(Data.now() / 500), 
-        500 * Math.sin(Data.now() / 1000),
-        500 * Math.cos(Data.now() / 500)
+        500 * Math.sin(Date.now() / 500), 
+        500 * Math.sin(Date.now() / 1000),
+        500 * Math.cos(Date.now() / 500)
         );
 
         /* レンダリング */ 
