@@ -31,4 +31,5 @@ function init() {
     /* 平行光源 */
     const directionalLight =new THREE.DirectionalLight( 0xffffff, 1.9);
     directionalLight.position.set(1, 1, 1);
+    scene.add(directionalLight);
 }
