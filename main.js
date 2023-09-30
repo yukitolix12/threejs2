@@ -51,8 +51,13 @@ function init() {
         /* 角度に応じてカメラの位置を変更する */
         camera.position.x = 1000 * Math.sin(radian);
 
+        /* ライトを周回させる */
+
+
         /* レンダリング */ 
         renderer.render(scene, camera);
         requestAnimationFrame(tick);
     }
+
+    tick();
 }
