@@ -6,17 +6,19 @@ function init() {
     const height = 540;
     let rot = 0;
 
+    /* レンダラー作成 */
+    const renderer = new THREE.WebGLRenderer({
+        canvas: document.querySelector("#myCanvas"),
+    });
+    renderer.setSize(window.innerWidth, window.innerHeight);
+
     /* シーン作成 */
     const scene = new THREE.Scene();
 
     /* カメラ作成 */
     const camera = new THREE.PerspectiveCamera(45, width / height);
 
-    /* レンダラー作成 */
-    const renderer = new THREE.WebGLRenderer({
-        canvas: document.querySelector("#myCanvas"),
-    });
-    renderer.setSize(window.innerWidth, window.innerHeight);
+    
 
     /* 球体生成 */
     const geometry = new THREE.SphereGeometry(300, 30, 30);
@@ -38,4 +40,6 @@ function init() {
     scene.add(pointLight);
     const pointLightHelper = new THREE.pointLightHelper(pointLight, 30);
     scene.add(pointLightHelper);
+
+    
 }
