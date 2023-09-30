@@ -53,5 +53,6 @@ function init() {
 
         /* レンダリング */ 
         renderer.render(scene, camera);
+        requestAnimationFrame(tick);
     }
 }
