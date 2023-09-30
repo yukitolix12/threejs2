@@ -27,4 +27,7 @@ function init() {
     /* メッシュ作成 */
     const earth = new THREE.Mesh(geometry, material);
     scene.add(earth);
+
+    /* 平行光源 */
+    const directionalLight =new THREE.DirectionalLight( 0xffffff, 2, 1000 );
 }
