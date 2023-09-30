@@ -44,5 +44,7 @@ function init() {
     /* フレーム毎に呼び出される関数 */
     function tick() {
         rot += 0.5;
+
+        const radian = (rot * Math.PI) / 180;
     }
 }
