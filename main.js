@@ -36,4 +36,5 @@ function init() {
     /* ポイント光源 */
     const pointLight = new THREE.PointLight( 0xffffff, 2, 1000);
     scene.add(pointLight);
+    const pointLightHelper = new THREE.pointLightHelper(pointLight, 30);
 }
