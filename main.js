@@ -39,6 +39,9 @@ function init() {
     const pointLightHelper = new THREE.PointLightHelper(pointLight, 30);
     scene.add(pointLightHelper);
 
+    /*  星屑追加 */
+    createStarField();
+
     /* フレーム毎に呼び出される関数 */
     function tick() {
         rot += 0.5;
