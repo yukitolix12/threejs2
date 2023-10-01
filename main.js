@@ -56,6 +56,10 @@ function init() {
 
         /* 星屑の形状データ作成 */
         const geometry = new THREE.BufferGeometry();
+        geometry.setAttribute(
+            "position", 
+            new THREE.Float32BufferAttribute(vertices, 3)
+        );
     }
 
     /* フレーム毎に呼び出される関数 */
