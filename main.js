@@ -65,7 +65,11 @@ function init() {
         const material = new THREE.PointsMaterial({
             size: 8,
             color: oxffffff,
-        })
+        });
+
+        /* メッシュ */
+        const stars = new THREE.Mesh(geometry, material);
+        
     }
 
     /* フレーム毎に呼び出される関数 */
