@@ -50,6 +50,9 @@ function init() {
         camera.position.x = 1000 * Math.sin(radian);
         camera.position.z = 2000 * Math.cos(radian);
 
+        /* カメラの見る位置を固定する */
+        camera.lookAt(new THREE.Vector3(0, 0, -400));
+
         /* ライトを周回させる */
         pointLight.position.set(
         500 * Math.sin(Date.now() / 500), 
