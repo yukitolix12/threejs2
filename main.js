@@ -42,6 +42,11 @@ function init() {
     /*  星屑追加 */
     createStarField();
 
+    /* 星屑生成の関数 */
+    function createStarField() {
+
+    }
+
     /* フレーム毎に呼び出される関数 */
     function tick() {
         rot += 0.5;
