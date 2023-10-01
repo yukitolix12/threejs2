@@ -53,6 +53,9 @@ function init() {
 
             vertices.push(x, y, z);
         }
+
+        /* 星屑の形状データ作成 */
+        const geometry = new THREE.BufferGeometry();
     }
 
     /* フレーム毎に呼び出される関数 */
