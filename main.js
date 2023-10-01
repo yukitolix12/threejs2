@@ -44,7 +44,15 @@ function init() {
 
     /* 星屑生成の関数 */
     function createStarField() {
+        /* x,y,z座標の値がランダムに入った配列を500個生成 */
+        const vertices = [];
+        for(let i = 0; i < 500; i++) {
+            const x = 3000 * (Math.random() - 0.5);
+            const y = 3000 * (Math.random() - 0.5);
+            const z = 3000 * (Math.random() - 0.5);
 
+            vertices.push(x, y, z);
+        }
     }
 
     /* フレーム毎に呼び出される関数 */
