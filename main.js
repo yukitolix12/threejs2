@@ -60,6 +60,12 @@ function init() {
             "position", 
             new THREE.Float32BufferAttribute(vertices, 3)
         );
+
+        /* 材質、マテリアルの作成 */
+        const material = new THREE.PointsMaterial({
+            size: 8,
+            color: oxffffff,
+        })
     }
 
     /* フレーム毎に呼び出される関数 */
