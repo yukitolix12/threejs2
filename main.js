@@ -64,11 +64,11 @@ function init() {
         /* 材質、マテリアルの作成 */
         const material = new THREE.PointsMaterial({
             size: 8,
-            color: oxffffff,
+            color: 0xffffff,
         });
 
         /* メッシュ */
-        const stars = new THREE.Mesh(geometry, material);
+        const stars = new THREE.Points(geometry, material);
         scene.add(stars);
     }
 
