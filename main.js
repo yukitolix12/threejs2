@@ -69,7 +69,7 @@ function init() {
 
         /* メッシュ */
         const stars = new THREE.Mesh(geometry, material);
-        
+        scene.add(stars);
     }
 
     /* フレーム毎に呼び出される関数 */
