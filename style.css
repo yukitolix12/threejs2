@@ -23,3 +23,9 @@ header {
 header h2 {
     font-size: 2rem;
 }
+
+header ul {
+    font-size: 20px;
+    list-style: none;
+    display: flex;
+}
