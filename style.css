@@ -48,3 +48,7 @@ header ul a {
 .hero h1 {
     font-size: 100px;
 }
+
+.hero p {
+    font-size: 30px;
+}
