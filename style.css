@@ -63,3 +63,9 @@ header ul a {
     font-weight: 500;
     cursor: pointer;
 }
+
+.hero button:hover {
+    color: black;
+    background-color: white;
+    border: 1px solid black;
+}
